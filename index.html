@@ -38,8 +38,11 @@
 	<img src="metronome.png"/>
 
 	<h2>Class Diagram</h2>
+	<p>In the original diagram, keyNeck extended guitarNeck, but during implementation it became clear that this wouldn't work. For the chord section of the app, notes needed to be grouped together based on which string they belonged to, whereas for the the key section they had to be grouped together based on which note they represented. Since all instances of the same note act identically in the key finder section, it was much easier to simply define an array of CheckBoxes for each note within the activity itself.</p>
+	<img src="classdiagram.png"/>
 
 	<h2>Design Patterns</h2>
+	<p>I implemented the singleton pattern in order to make sure there is only ever a single instance of the chordNeck class.</p>
 
 	<h2>Points of Interest</h2>
 
